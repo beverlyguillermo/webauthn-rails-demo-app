@@ -69,3 +69,10 @@ $ bundle outdated --groups
 More in:
 
 [Updating gems cheat sheet](https://medium.com/cedarcode/updating-gems-cheat-sheet-346d5666a181)
+
+# Additional Notes
+
+```
+bundle config build.pg --with-pg-config=$(brew --prefix)/opt/libpq/bin/pg_config
+bundle config build.puma --with-cflags="-Wno-error=implicit-function-declaration"
+```
